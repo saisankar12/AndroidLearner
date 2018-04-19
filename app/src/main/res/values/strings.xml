@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">AndroidLearner</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="android_date_amp_time"><![CDATA[Android Date & Time]]></string>
+    <string name="timepicker">TimePicker</string>
+    <string name="datepicker">DatePicker</string>
+    <string name="calenderview">CalenderView</string>
+    <string name="chronometer">ChronoMeter</string>
+    <string name="textclock">TextClock</string>
+    <string name="android_images">Android Images</string>
+    <string name="imagebutton">ImageButton</string>
+    <string name="imageview">ImageView</string>
+    <string name="videoview">VideoView</string>
+    <string name="android_containers">Android Containers</string>
+    <string name="radiogroup">RadioGroup</string>
+    <string name="listview">ListView</string>
+    <string name="gridview">GridView</string>
+    <string name="expandable_listview">Expandable ListView</string>
+    <string name="scrollview">ScrollView</string>
+    <string name="horizontal_scrollview">Horizontal ScrollView</string>
+    <string name="webview">WebView</string>
+    <string name="android_layouts">Android Layouts</string>
+    <string name="gridlayout">GridLayout</string>
+    <string name="framelayout">FrameLayout</string>
+    <string name="linearlayout_horizontal">LinearLayout(Horizontal)</string>
+    <string name="linearlayout_vertical">LinearLayout(Vertical)</string>
+    <string name="relativelayout">RelativeLayout</string>
+    <string name="tablelayout">TableLayout</string>
+    <string name="android_widgets">Android Widgets</string>
+   
+    <string name="edittext">EditText</string>
+    <string name="button">Button</string>
+    <string name="radio_button">Radio Button</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="rating_bar">Rating Bar</string>
+    <string name="progress_bar">Progress Bar</string>
+    <string name="seekbar">SeekBar</string>
+    <string name="androidswitch">Switch</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="spinner">Spinner</string>
+    <string name="autocomplete_textview">AutoComplete TextView</string>
+    <string name="multiautocompletetextview">MultiAutoCompleteTextView</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="activity_life_cycle">Activity Life Cycle</string>
+
+    <!-- Validation -->
+    <string name="nameerror">Enter Valid Name</string>
+    <string name="emailerror">Enter Valid Email</string>
+    <string name="textview">TextView</string>
+    <string name="what_is_android">What is Android ?</string>
+    <string name="android_content">Android Content</string>
+    <string name="todo">TODO</string>
+
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6e0281</color>
+    <color name="colorPrimaryDark">#2e31ef</color>
+    <color name="colorAccent">#f50410</color>
+
+    <color name="colorPrimary1">#7306b3</color>
+    <color name="colorPrimaryDark1">#480766</color>
+    <color name="colorAccent1">#138003</color>
+
+    <color name="tabHeader">#FC3D0D</color>
+    <color name="tabHeaders">#000099</color>
+    <color name="tabHeaderss">#CC0066</color>
+
+    <color name="textcolor">#fcfc55</color>
+    <color name="colorprimarydarks">#FF6600</color>
+    <color name="viewcolor">#faeb12</color>
+
+    <color name="tab_background_selected">#4943e9</color>
+    <color name="tab_background_unselected">#210ad1</color>
+</resources>

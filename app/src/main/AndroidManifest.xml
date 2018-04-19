@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.venkatasaisankar.androidlearner">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme.Base">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AndroidOverview" />
+        <activity
+            android:name=".androidtutorialvideo.WhatIsAndroid"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.AndroidFeatures"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.AndroidComponents"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.AndroidContent"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.AndroidProjectStructure"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.Layout"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.ActivityLifeCycle"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.HowtoText"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.FirstApplication"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.Intents"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.Actv"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.Spinner"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.ListStatic"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.ListDynamic"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.GalleryGrid"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.WebView"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.WebviewHTML"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.Fragments"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.SPF"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.SQLiteInsert"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androidtutorialvideo.SQLite"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".androiduicomponents.textview.text_view.output.WidgetsTextView"
+            android:label="TextView_OutPut"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".androiduicomponents.textview.text_view.sourcecode.TextViewSourceCode"
+            android:label="TextView_SourceCode"
+            />
+        <activity android:name=".androiduicomponents.textview.edittext.output.WidgetsEditText"
+            android:label="EditText_OutPut"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".androiduicomponents.textview.edittext.sourcecode.EditTextSourceCode"
+            android:label="EditText_SourceCode"
+            />
+    </application>
+
+</manifest>

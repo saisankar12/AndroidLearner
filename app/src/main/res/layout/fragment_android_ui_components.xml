@@ -1,0 +1,1490 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.venkatasaisankar.androidlearner.AndroidUI_Components">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linearshape"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/androidwidgets"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/widgetsshape"
+                android:fontFamily="serif"
+                android:shadowColor="#FFFFFF"
+                android:shadowDx="10"
+                android:shadowDy="10"
+                android:shadowRadius="25"
+                android:text="@string/android_widgets"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp" />
+            <!--Android Widgets:- -->
+            <LinearLayout
+                android:id="@+id/widgets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- Text View Design-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#3333FF"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/textview"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/tvout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:onClick="myClick"
+                        android:src="@mipmap/show" />
+                    <View
+                        android:background="@color/viewcolor"
+                        android:layout_width = "1dip"
+                        android:layout_gravity="center"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical ="true"
+                        android:layout_alignParentTop="true"/>
+                    <ImageView
+                        android:id="@+id/textcode"
+                        android:layout_width="0dp"
+                        android:onClick="myClick"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- Edit Text Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#CC0066"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/edittext"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/etout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+                    <View
+                        android:background="@color/viewcolor"
+                        android:layout_width = "1dip"
+                        android:layout_gravity="center"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical ="true"
+                        android:layout_alignParentTop="true"/>
+                    <ImageView
+                        android:id="@+id/edittextcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- Button Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#0D6E0D"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/button"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/bout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+                    <View
+                        android:background="@color/viewcolor"
+                        android:layout_width = "1dip"
+                        android:layout_gravity="center"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical ="true"
+                        android:layout_alignParentTop="true"/>
+                    <ImageView
+                        android:id="@+id/buttouncode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- Radio Button Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#800000"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/radio_button"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/rbout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+                    <View
+                        android:background="@color/viewcolor"
+                        android:layout_width = "1dip"
+                        android:layout_gravity="center"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical ="true"
+                        android:layout_alignParentTop="true"/>
+                    <ImageView
+                        android:id="@+id/rbcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- Check Box Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#03846b"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/checkbox"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/checkboxout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+                    <View
+                        android:background="@color/viewcolor"
+                        android:layout_width = "1dip"
+                        android:layout_gravity="center"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical ="true"
+                        android:layout_alignParentTop="true"/>
+                    <ImageView
+                        android:id="@+id/checkboxcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- Rating Bar Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#7c6402"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/rating_bar"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/ratingout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+                    <View
+                        android:background="@color/viewcolor"
+                        android:layout_width = "1dip"
+                        android:layout_gravity="center"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical ="true"
+                        android:layout_alignParentTop="true"/>
+                    <ImageView
+                        android:id="@+id/ratingcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- Progress Bar Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#154360"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/progress_bar"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/progressout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+                    <View
+                        android:background="@color/viewcolor"
+                        android:layout_width = "1dip"
+                        android:layout_gravity="center"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical ="true"
+                        android:layout_alignParentTop="true"/>
+                    <ImageView
+                        android:id="@+id/progresscode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- SeekBar Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#D35400"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/seekbar"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/seekout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+                    <View
+                        android:background="@color/viewcolor"
+                        android:layout_width = "1dip"
+                        android:layout_gravity="center"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical ="true"
+                        android:layout_alignParentTop="true"/>
+                    <ImageView
+                        android:id="@+id/seekcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- Switch design-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#3333FF"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/androidswitch"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/switchout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+                    <View
+                        android:background="@color/viewcolor"
+                        android:layout_width = "1dip"
+                        android:layout_gravity="center"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical ="true"
+                        android:layout_alignParentTop="true"/>
+                    <ImageView
+                        android:id="@+id/switchcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!--Toggle Button Design-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#CC0066"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/togglebutton"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/tbout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+                    <View
+                        android:background="@color/viewcolor"
+                        android:layout_width = "1dip"
+                        android:layout_gravity="center"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical ="true"
+                        android:layout_alignParentTop="true"/>
+                    <ImageView
+                        android:id="@+id/tbcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!--Spinner Design-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#0D6E0D"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/spinner"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/spinnerout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+                    <View
+                        android:background="@color/viewcolor"
+                        android:layout_width = "1dip"
+                        android:layout_gravity="center"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical ="true"
+                        android:layout_alignParentTop="true"/>
+                    <ImageView
+                        android:id="@+id/spinnercode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- Auto Complete TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#0d3e6e"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/autocomplete_textview"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/actvout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+                    <View
+                        android:background="@color/viewcolor"
+                        android:layout_width = "1dip"
+                        android:layout_gravity="center"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical ="true"
+                        android:layout_alignParentTop="true"/>
+                    <ImageView
+                        android:id="@+id/actvcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- Multi Auto Complete TextView-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#6e680d"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/multiautocompletetextview"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/mactvout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+                    <View
+                        android:background="@color/viewcolor"
+                        android:layout_width = "1dip"
+                        android:layout_gravity="center"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical ="true"
+                        android:layout_alignParentTop="true"/>
+                    <ImageView
+                        android:id="@+id/mactvcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <!--Android Layout Design Start-->
+            <Button
+                android:id="@+id/androidlayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/layoutshape"
+                android:fontFamily="serif"
+                android:shadowColor="#FFFFFF"
+                android:shadowDx="10"
+                android:shadowDy="10"
+                android:shadowRadius="25"
+                android:text="@string/android_layouts"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- Grid Layout Design-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#3333FF"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/gridlayout"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/gridlayoutout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+
+                    <ImageView
+                        android:id="@+id/gridlayoutcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- FrameLayout Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#CC0066"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/framelayout"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/frameout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+
+                    <ImageView
+                        android:id="@+id/framecode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- LinearLayout(Horizontal) Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#0D6E0D"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/linearlayout_horizontal"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/linearhorout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+
+                    <ImageView
+                        android:id="@+id/linearhorcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- LinearLayout(Vertical) Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#800000"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/linearlayout_vertical"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/linearverout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+
+                    <ImageView
+                        android:id="@+id/linearvercode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- RelativeLayout Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#03846b"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/relativelayout"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/relativeout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+
+                    <ImageView
+                        android:id="@+id/relativecode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- Table Layout Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#7c6402"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/tablelayout"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/tableout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+
+                    <ImageView
+                        android:id="@+id/tablecode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- Android Container start Design -->
+            <Button
+                android:id="@+id/androidcontainers"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editextshape"
+                android:fontFamily="serif"
+                android:shadowColor="#FFFFFF"
+                android:shadowDx="10"
+                android:shadowDy="10"
+                android:shadowRadius="25"
+                android:text="@string/android_containers"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+
+            <LinearLayout
+                android:id="@+id/containers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- Radio Group Design-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#3333FF"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/radiogroup"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/radioout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+
+                    <ImageView
+                        android:id="@+id/radiocode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- ListView Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#CC0066"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/listview"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/listout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+
+                    <ImageView
+                        android:id="@+id/listcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- GridView Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#0D6E0D"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/gridview"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/gridout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+
+                    <ImageView
+                        android:id="@+id/gridcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- ExpandableListView Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#800000"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/expandable_listview"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/expandout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+
+                    <ImageView
+                        android:id="@+id/expandcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- ScrollView Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#03846b"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/scrollview"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/scrollout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+
+                    <ImageView
+                        android:id="@+id/scrollcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- Horizontal ScrollView Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#7c6402"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/horizontal_scrollview"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/horiout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+
+                    <ImageView
+                        android:id="@+id/horicode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- WebView Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#CC0066"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/webview"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/webviewout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+
+                    <ImageView
+                        android:id="@+id/webviewcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Android Image start Design -->
+            <Button
+                android:id="@+id/androidimage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/imagesshape"
+                android:fontFamily="serif"
+                android:shadowColor="#FFFFFF"
+                android:shadowDx="10"
+                android:shadowDy="10"
+                android:shadowRadius="25"
+                android:text="@string/android_images"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:id="@+id/images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- ImageButton Design-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#3333FF"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/imagebutton"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/imagebuttonout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+
+                    <ImageView
+                        android:id="@+id/imagebuttoncode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- ImageView Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#CC0066"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/imageview"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/imageviewout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+
+                    <ImageView
+                        android:id="@+id/imageviewcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- VideoView Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#0D6E0D"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/videoview"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/videoviewout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+
+                    <ImageView
+                        android:id="@+id/videoviewcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!-- Android Image start Design -->
+            <Button
+                android:id="@+id/androiddate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dateshape"
+                android:fontFamily="serif"
+                android:shadowColor="#FFFFFF"
+                android:shadowDx="10"
+                android:shadowDy="10"
+                android:shadowRadius="25"
+                android:text="@string/android_date_amp_time"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+
+            <LinearLayout
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- Time Picker Design-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#3333FF"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/timepicker"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/timepickerout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+                    <View
+                        android:background="@color/viewcolor"
+                        android:layout_width = "1.5dip"
+                        android:layout_gravity="center"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical ="true"
+                        android:layout_alignParentTop="true"/>
+                    <ImageView
+                        android:id="@+id/timepickercode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- DatePicker Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#706802"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/datepicker"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/datepickerout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+                    <View
+                        android:background="@color/viewcolor"
+                        android:layout_width = "1.5dip"
+                        android:layout_gravity="center"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical ="true"
+                        android:layout_alignParentTop="true"/>
+                    <ImageView
+                        android:id="@+id/datepickercode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- CalenderView Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#1c87c1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/calenderview"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/calenderviewout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+                    <View
+                        android:background="@color/viewcolor"
+                        android:layout_width = "1.5dip"
+                        android:layout_gravity="center"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical ="true"
+                        android:layout_alignParentTop="true"/>
+                    <ImageView
+                        android:id="@+id/calenderviewcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- ChronoMeter Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#cc0052"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/chronometer"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/chronometerout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+                    <View
+                        android:background="@color/viewcolor"
+                        android:layout_width = "1.5dip"
+                        android:layout_gravity="center"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical ="true"
+                        android:layout_alignParentTop="true"/>
+                    <ImageView
+                        android:id="@+id/chronometercode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+                <!-- textClock Design -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#7a1380"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="serif"
+                        android:text="@string/textclock"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/textclockout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/show" />
+                    <View
+                        android:background="@color/viewcolor"
+                        android:layout_width = "1.5dip"
+                        android:layout_gravity="center"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical ="true"
+                        android:layout_alignParentTop="true"/>
+
+                    <ImageView
+                        android:id="@+id/textclockcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@mipmap/code" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
